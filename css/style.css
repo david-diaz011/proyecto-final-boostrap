@@ -1,0 +1,67 @@
+/* carrousel */
+
+.carousel-item {
+  height: 100vh;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.575);
+  background-blend-mode: soft-light;
+}
+.banner1 {
+  background-image: url(../img/pexels-polina-tankilevitch-3872263.jpg);
+}
+.banner2 {
+  background-image: url(../img/Restaurante-Italiano-Il-Giro-In-Tandem-Madrid-Portada.jpg);
+}
+.banner3 {
+  background-image: url(../img/pexels-polina-tankilevitch-3872263.jpg);
+}
+.carousel-caption {
+  padding-bottom: 150px;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption a {
+  background-color: #edbb00;
+  padding: 15px 35px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 25px;
+}
+/* clase de nav que permite sacarlo del color transparente */
+.top-nav-collapse {
+  background-color: rgba(0, 0, 0, 0.753) !important;
+}
+.nav-link:hover {
+  color: #edbb00 !important;
+}
+
+/* media para carrousel */
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    padding: 20px 15px;
+  }
+  .navbar-collapse {
+    background: black;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .carousel-caption {
+    padding-bottom: 100px;
+  }
+  .carousel-caption h5 {
+    font-size: 25px;
+  }
+}
