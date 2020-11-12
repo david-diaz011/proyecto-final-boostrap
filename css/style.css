@@ -46,9 +46,58 @@
   color: #edbb00 !important;
 }
 
-/* media para carrousel */
+.form-buscar {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  height: 60px;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  border: 3px solid black;
+  border-right: none;
+}
 
+.boton-buscar {
+  width: 100%;
+  background-color: #fff;
+  border: 3px solid black;
+  border-left: none;
+  height: 60px;
+  border-radius: 0 15px 15px 0;
+}
+
+.formulario-buscar2 {
+  height: 80px;
+  padding: 10px;
+  background-color: #edbb00;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buscar-texto::placeholder {
+  color: white;
+}
+.buscar-texto {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 18px;
+}
+.boton2 {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-right: 8px;
+}
+.wow {
+  visibility: hidden;
+}
 @media screen and (max-width: 768px) {
+  /* media para carrousel */
   .navbar-brand {
     padding: 20px 15px;
   }
