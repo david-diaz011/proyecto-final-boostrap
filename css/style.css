@@ -13,19 +13,18 @@
   background-blend-mode: soft-light;
 }
 .banner1 {
-  background-image: url(../img/pexels-polina-tankilevitch-3872263.jpg);
+  background-image: url(../img/fondo-baner-2.jpg);
 }
 .banner2 {
   background-image: url(../img/Restaurante-Italiano-Il-Giro-In-Tandem-Madrid-Portada.jpg);
 }
 .banner3 {
-  background-image: url(../img/pexels-polina-tankilevitch-3872263.jpg);
+  background-image: url(../img/fondo-banner-1.jpg);
 }
 .carousel-caption {
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 .carousel-caption h5 {
-  font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 25px;
@@ -96,7 +95,18 @@
 .wow {
   visibility: hidden;
 }
-@media screen and (max-width: 768px) {
+.titulo-fuente {
+  font-family: "Xanh Mono", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.titulo-tamaño {
+  font-size: 4.5rem;
+}
+.subtitulo-tamaño {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 576px) {
   /* media para carrousel */
   .navbar-brand {
     padding: 20px 15px;
@@ -108,9 +118,18 @@
     text-align: center;
   }
   .carousel-caption {
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
-  .carousel-caption h5 {
-    font-size: 25px;
+
+  .titulo-tamaño {
+    font-size: 2rem;
+  }
+  .subtitulo-tamaño {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    padding-bottom: 310px;
   }
 }

@@ -14,6 +14,13 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
     <script
       src="https://kit.fontawesome.com/7ed0c5a50f.js"
       crossorigin="anonymous"
@@ -45,11 +52,99 @@
               <a class="nav-link" href="#">productos</a>
               <a class="nav-link" href="#">contacto</a>
               <a class="nav-link" href="#">inicar sesion</a>
-              <a class="nav-link" href="#">subscribirse</a>
+              <a
+                class="nav-link"
+                href="#modalBlogRestaurante"
+                data-toggle="modal"
+                data-target="#modalBlogRestaurante"
+                >suscribite</a
+              >
             </div>
           </div>
         </div>
       </nav>
+      <!-- modal nav-banner -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalBlogRestaurante"
+          tabindex="-1"
+          aria-labelledby="modalBlogRestauranteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBlogRestauranteLabel">
+                  Suscribíte a este blog
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input
+                          type="text"
+                          name="Nombre"
+                          placeholder="Pablo Perez"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                        <small id="emailHelp" class="form-text text-muted"
+                          >We'll never share your email with anyone else.</small
+                        >
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          checked
+                        />
+                        <label class="form-check-label"
+                          >¿Quieres recibir nuestras novedades?</label
+                        >
+                      </div>
+                      <button type="submit" class="btn btn-success">
+                        Enviar
+                      </button>
+                    </form>
+                  </div>
+                </form>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Salir
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
       <!-- carrusel -->
       <section>
         <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
@@ -63,39 +158,49 @@
             <li data-target="#carouselPrincipal" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
+            <!-- item 1 de carrusel -->
             <div class="carousel-item active">
               <div class="banner banner1"></div>
               <div class="carousel-caption d-flex flex-column">
-                <h5 class="mb-4 mb-md-4">DEL RESTAURANTE A TU CASA</h5>
-                <p class="mb-4 mb-md-4">
+                <h5 class="mb-4 mb-md-4 titulo-fuente titulo-tamaño">
+                  DEL RESTAURANTE A TU CASA
+                </h5>
+                <p class="mb-4 mb-md-4 titulo-fuente subtitulo-tamaño">
                   Te traemos las mejores recetas totalmente profesionales de la
                   mano de expertos en la gastronomia y a un click de distancia
                 </p>
-                <p class="mt-5"><a href="#">conoce mas</a></p>
+                <p class="mt-5"><a data-scroll href="#inicio">conoce mas</a></p>
               </div>
             </div>
+            <!-- item 2 de carrusel -->
             <div class="carousel-item">
               <div class="banner banner2"></div>
               <div class="carousel-caption">
-                <h5 class="mb-5 mb-md-4">¿NO HAY GANAS DE COCINAR?</h5>
-                <p class="mb-5 mb-md-4">
+                <h5 class="mb-5 mb-md-4 titulo-fuente titulo-tamaño">
+                  ¿NO HAY GANAS DE COCINAR?
+                </h5>
+                <p class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño">
                   No te preocupes, entra a nuestra tienda y pedí los platos
                   gourmet que desees te lo llevamos directo a tu casa
                 </p>
                 <p class="mt-5"><a href="#">nuestros productos</a></p>
               </div>
             </div>
+            <!-- item 3 de carrusel -->
             <div class="carousel-item">
               <div class="banner banner3"></div>
               <div class="carousel-caption d-md-block">
-                <h5 class="mb-5 mb-md-4">¡RECIBÍ NOVEDADES A DIARIO!</h5>
-                <p class="mb-5 mb-md-4">
+                <h5 class="mb-5 mb-md-4 titulo-fuente titulo-tamaño">
+                  ¡RECIBÍ NOVEDADES A DIARIO!
+                </h5>
+                <p class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño">
                   receta del dia, consejos, tips de salud, notas y mucho mas te
                   esperan del otro lado de la subscricion a nuestro newsletter
                 </p>
                 <p class="mt-5"><a href="#">subscribite</a></p>
               </div>
             </div>
+            <!-- botones de carrusel -->
           </div>
           <a
             class="carousel-control-prev"
@@ -257,11 +362,12 @@
             </div>
           </div>
         </article>
+        <!-- seccion 2 de la pag -->
         <article class="col-3 mt-4">
           <!-- boton de busqueda, publicidad y categorias -->
           <div class="row">
             <!-- boton de busqueda 1 -->
-            <div class="col-12 wow fadeInUp" data-wow-delay="0.2s  ">
+            <div class="col-12">
               <form action="">
                 <div class="row no-gutters">
                   <div class="col-10">
@@ -282,7 +388,7 @@
               </form>
             </div>
             <!-- boton de busqueda2 -->
-            <div class="col-12 mt-5 wow fadeInUp" data-wow-delay="0.2s ">
+            <div class="col-12 mt-5">
               <form action="" class="formulario-buscar2">
                 <input type="text" placeholder="buscar" class="buscar-texto" />
                 <a href="" class="boton2"><i class="fas fa-search"></i></a>
@@ -290,10 +396,7 @@
             </div>
 
             <!-- publicidad -->
-            <div
-              class="col-12 d-none d-md-block mt-5 wow fadeInUp"
-              data-wow-delay="0.2s  "
-            >
+            <div class="col-12 d-none d-md-block mt-5">
               <img
                 src="./img/propaganda2.jpeg"
                 alt="publicidad de jabon para la ropa"
@@ -302,7 +405,7 @@
             </div>
 
             <!-- categorias -->
-            <div class="col-12 mt-5 wow fadeInUp" data-wow-delay="0.2s ">
+            <div class="col-12 mt-5">
               <h3 class="text-muted">Categorias</h3>
               <div class="accordion" id="accordion">
                 <!-- card 1 -->
@@ -475,9 +578,15 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- smoth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
       $(document).ready(function () {
         new WOW().init();
+      });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 340,
+        speed: 1000,
       });
     </script>
   </body>
