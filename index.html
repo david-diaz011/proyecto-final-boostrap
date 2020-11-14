@@ -111,9 +111,6 @@
                           autocomplete="off"
                           required
                         />
-                        <small id="emailHelp" class="form-text text-muted"
-                          >We'll never share your email with anyone else.</small
-                        >
                       </div>
                       <div class="form-group form-check">
                         <input
@@ -125,21 +122,17 @@
                           >¿Quieres recibir nuestras novedades?</label
                         >
                       </div>
-                      <button type="submit" class="btn btn-success">
-                        Enviar
+                      <button class="btn btn-success btn-block">
+                        <a
+                          href="404.html"
+                          class="btn-link text-white text-decoration-none"
+                          type="submit"
+                          >enviar</a
+                        >
                       </button>
                     </form>
                   </div>
                 </form>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
-                    Salir
-                  </button>
-                </div>
               </div>
             </div>
           </div>
@@ -197,7 +190,14 @@
                   receta del dia, consejos, tips de salud, notas y mucho mas te
                   esperan del otro lado de la subscricion a nuestro newsletter
                 </p>
-                <p class="mt-5"><a href="#">subscribite</a></p>
+                <p class="mt-5">
+                  <a
+                    href="#modalBlogRestaurante"
+                    data-toggle="modal"
+                    data-target="#modalBlogRestaurante"
+                    >subscribite</a
+                  >
+                </p>
               </div>
             </div>
             <!-- botones de carrusel -->
@@ -226,7 +226,7 @@
 
     <main class="container">
       <section class="row">
-        <article class="col-8 mr-5">
+        <article class="col-12 col-lg-8 mr-5">
           <div class="row">
             <!-- card 1 -->
             <div class="col-12 mt-4 wow fadeInLeft" data-wow-delay="0.2s">
@@ -234,27 +234,41 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="./img/pexels-polina-tankilevitch-3872263.jpg"
-                      class="card-img h-100"
+                      src="./img/imagen-para-entrada-1.jpg"
+                      class="card-img w-100"
                       alt="..."
                     />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">
+                        3 tips para llevar una aliemntacion saludable
+                      </h5>
                       <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                        Te traemos algunos tips de la mano de especialistas en
+                        la alimentación para prepararte unos ricos breacks y
+                        darte unos mimos dulces sin sentirte culpable a la hora
+                        de comerlos y es que están elaborados pensando en tener
+                        la menor cantidad de calorías, sin sacrificar el sabor.
+                        Conoce estas recetas ideales para vos si estas pensando
+                        en cuidar tu alimentación y compartinos que te pareció
                       </p>
                       <p class="card-text">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
+                        <small class="text-muted">creado hace 2 dias</small>
                       </p>
                     </div>
-                    <div class="card-footer">
-                      <p>hola</p>
+                    <div
+                      class="card-footer d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-outline-dark btn-hover"
+                        >ver mas
+                      </a>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>creado por Pia</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -270,27 +284,42 @@
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
-                      src="./img/pexels-polina-tankilevitch-3872263.jpg"
+                      src="./img/entrada-2.jpg"
                       class="card-img h-100"
                       alt="..."
                     />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">tips para la cocina</h5>
                       <p class="card-text">
-                        This is a wider card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                        Aprende estos trucos y consejos que te dejamos en este
+                        post algo valiosísimo que va a guiarte para que te
+                        inicies en el mundo de la cocina, a conocer tus
+                        instrumentos, a saber, que es lo esencial que debe tener
+                        cada cocina, los cuidados necesarios y cómo encarar
+                        cualquiera de nuestras recetas, convertite en un
+                        profesional de la cocina con nosotros de la mano de
+                        reconocidos chefs los cuales se animaron a compartirnos
+                        estos tips para cualquiera que decida iniciarse en este
+                        exquisito mundo
                       </p>
                       <p class="card-text">
-                        <small class="text-muted"
-                          >Last updated 3 mins ago</small
-                        >
+                        <small class="text-muted">creado hace una semana</small>
                       </p>
                     </div>
-                    <div class="card-footer">
-                      <p>hola</p>
+                    <div
+                      class="card-footer d-flex justify-content-between align-items-center"
+                    >
+                      <a
+                        href="#"
+                        class="btn btn-primary btn-outline-dark btn-hover"
+                        >ver mas
+                      </a>
+                      <div>
+                        <i class="fas fa-user"></i>
+                        <span>creado por david</span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -363,7 +392,7 @@
           </div>
         </article>
         <!-- seccion 2 de la pag -->
-        <article class="col-3 mt-4">
+        <article class="col-12 col-lg-3 mt-4">
           <!-- boton de busqueda, publicidad y categorias -->
           <div class="row">
             <!-- boton de busqueda 1 -->
@@ -388,7 +417,9 @@
               </form>
             </div>
             <!-- boton de busqueda2 -->
-            <div class="col-12 mt-5">
+            <div
+              class="col-12 col-md-7 col-lg-12 mt-5 ml-auto d-md-flex justify-content-md-around"
+            >
               <form action="" class="formulario-buscar2">
                 <input type="text" placeholder="buscar" class="buscar-texto" />
                 <a href="" class="boton2"><i class="fas fa-search"></i></a>

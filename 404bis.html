@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Restoclic</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <script
+      src="https://kit.fontawesome.com/7ed0c5a50f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- navegacion -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">Restoclick</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active" href="#">inicio</a>
+              <a class="nav-link" href="#">¿quienes somos?</a>
+              <a class="nav-link" href="#">productos</a>
+              <a class="nav-link" href="#">contacto</a>
+              <a class="nav-link" href="#">inicar sesion</a>
+              <a
+                class="nav-link"
+                href="#modalBlogRestaurante"
+                data-toggle="modal"
+                data-target="#modalBlogRestaurante"
+                >suscribite</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- modal nav-banner -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalBlogRestaurante"
+          tabindex="-1"
+          aria-labelledby="modalBlogRestauranteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBlogRestauranteLabel">
+                  Suscribíte a este blog
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input
+                          type="text"
+                          name="Nombre"
+                          placeholder="Pablo Perez"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          checked
+                        />
+                        <label class="form-check-label"
+                          >¿Quieres recibir nuestras novedades?</label
+                        >
+                      </div>
+                      <button type="submit" class="btn btn-success btn-block">
+                        <a
+                          href=""
+                          class="btn-link text-white text-decoration-none"
+                          >enviar</a
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </header>
+    <main>
+      <!-- <section class="row justify-content-center text-white text-center mt-5">
+        <article class="col-12">
+          <h1 class="display-3 error-fonts">¡oops!</h1>
+          <h2 class="display-3 error-fonts">ERROR 404</h2>
+        </article>
+        <article class="col-10 mt-4 error-fonts">
+          <p class="error-content">
+            Te pedimos disculpas, pero la página web que buscas ya no se
+            encuentra disponible en nuestra Carta de recomendaciones o puede que
+            se hayan comido nuestro ultimo plato
+            <a href="">pincha aqui</a> y encarga otra página pronto!! no
+            queremos que nadie se quede sin comer
+          </p>
+        </article>
+      </section> -->
+
+      <section>
+        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- item 1 de carrusel -->
+            <div class="carousel-item active">
+              <div class="banner banner-404"></div>
+              <div class="carousel-caption caption-error d-flex flex-column">
+                <h1 class="display-3 error-fonts">¡oops!</h1>
+                <h2 class="display-3 error-fonts">ERROR 404</h2>
+                <p class="mb-4 mb-md-4 error-content">
+                  Te pedimos disculpas, pero la página web que buscas ya no se
+                  encuentra disponible en nuestra Carta de recomendaciones o
+                  puede que se hayan comido nuestro ultimo plato pincha aqui y
+                  encarga otra página pronto!! no queremos que nadie se quede
+                  sin comer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- jQuery -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- smoth scroll -->
+    <script>
+      $(document).ready(function () {
+        new WOW().init();
+      });
+    </script>
+  </body>
+</html>

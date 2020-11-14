@@ -45,6 +45,7 @@
   color: #edbb00 !important;
 }
 
+/*  estulos del formulario de busqueda */
 .form-buscar {
   width: 100%;
   background-color: #fff;
@@ -92,9 +93,17 @@
   font-size: 25px;
   margin-right: 8px;
 }
+/* estilos para botones */
+.btn-hover:hover {
+  background-color: #edbb00 !important;
+  color: white !important;
+  border: none !important;
+}
+/* estilos para las animaciones */
 .wow {
   visibility: hidden;
 }
+/* estilos para cambiar tipografia de carrucel y tamaño */
 .titulo-fuente {
   font-family: "Xanh Mono", sans-serif;
   font-weight: 400;
@@ -106,8 +115,30 @@
 .subtitulo-tamaño {
   font-size: 1.5rem;
 }
+
+.banner-404 {
+  background-image: url(../img/fondo-404.jpg);
+}
+.error-fonts {
+  font-family: "Merienda One", sans-serif;
+}
+.error-content {
+  font-family: "Amatic SC", sans-serif;
+  font-size: 2rem;
+}
+/* experimentales */
+.caption-error h5 {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  /* media para carrusel */
+  .carousel-caption {
+    padding-bottom: 310px;
+  }
+}
+
 @media screen and (max-width: 576px) {
-  /* media para carrousel */
+  /*  medias par navbar */
   .navbar-brand {
     padding: 20px 15px;
   }
@@ -117,19 +148,21 @@
   .nav-link {
     text-align: center;
   }
+  /* media para carrousel */
   .carousel-caption {
     padding-bottom: 40px;
   }
-
+  /* clases para modificar el titulo y subtitulo del baner */
   .titulo-tamaño {
     font-size: 2rem;
   }
   .subtitulo-tamaño {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
-}
-@media screen and (max-width: 768px) {
-  .carousel-caption {
-    padding-bottom: 310px;
+  .error-fonts {
+    font-size: 3rem;
+  }
+  .error-content {
+    font-size: 1.5rem;
   }
 }
