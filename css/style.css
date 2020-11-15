@@ -1,9 +1,5 @@
 /* carrousel */
 
-.carousel-item {
-  height: 100vh;
-}
-
 .banner {
   background-size: cover;
   background-position: center center;
@@ -21,15 +17,18 @@
 .banner3 {
   background-image: url(../img/fondo-banner-1.jpg);
 }
-.carousel-caption {
+.carrousel__principal-styles {
+  /* carrousel-caption*/
   padding-bottom: 50px;
 }
-.carousel-caption h5 {
+.headding_caption-principal {
+  /* heading de cada caption */
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 25px;
 }
-.carousel-caption a {
+.caption__boton-principal {
+  /* boton ancla de cada caption */
   background-color: #edbb00;
   padding: 15px 35px;
   display: inline-block;
@@ -46,27 +45,8 @@
 }
 
 /*  estulos del formulario de busqueda */
-.form-buscar {
-  width: 100%;
-  background-color: #fff;
-  padding: 20px;
-  height: 60px;
-  border-radius: 15px 0 0 15px;
-  outline: none;
-  border: 3px solid black;
-  border-right: none;
-}
 
-.boton-buscar {
-  width: 100%;
-  background-color: #fff;
-  border: 3px solid black;
-  border-left: none;
-  height: 60px;
-  border-radius: 0 15px 15px 0;
-}
-
-.formulario-buscar2 {
+.formulario-buscar {
   height: 80px;
   padding: 10px;
   background-color: #edbb00;
@@ -85,7 +65,7 @@
   color: white;
   font-size: 18px;
 }
-.boton2 {
+.boton_icon__search {
   width: 40px;
   height: 40px;
   text-decoration: none;
@@ -93,7 +73,7 @@
   font-size: 25px;
   margin-right: 8px;
 }
-/* estilos para botones */
+/* estilos para botones  de entradas en pagina principal*/
 .btn-hover:hover {
   background-color: #edbb00 !important;
   color: white !important;
@@ -116,8 +96,15 @@
   font-size: 1.5rem;
 }
 
+/* estilos para pagina de error */
 .banner-404 {
   background-image: url(../img/fondo-404.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  background-blend-mode: soft-light;
 }
 .error-fonts {
   font-family: "Merienda One", sans-serif;
@@ -126,9 +113,12 @@
   font-family: "Amatic SC", sans-serif;
   font-size: 2rem;
 }
-/* experimentales */
-.caption-error h5 {
-  margin-top: 0;
+.caption-error {
+  padding-bottom: 120px;
+}
+.link__error {
+  color: #edbb00;
+  text-decoration: none;
 }
 @media screen and (max-width: 768px) {
   /* media para carrusel */

@@ -15,16 +15,14 @@
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- fuentes de google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
+    <!-- fuente de google merienda -->
+
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
       rel="stylesheet"
     />
+    <!-- fuente de google amatic -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
@@ -148,23 +146,42 @@
         </article>
       </section>
     </header>
-    <main
-      class="banner-404 banner d-flex flex-column align-items-center justify-content-center"
-    >
-      <section class="row justify-content-center text-white text-center mt-5">
-        <article class="col-12">
-          <h1 class="display-3 error-fonts">¡oops!</h1>
-          <h2 class="display-3 error-fonts">ERROR 404</h2>
-        </article>
-        <article class="col-10 mt-4 error-fonts">
-          <p class="error-content">
-            Te pedimos disculpas, pero la página web que buscas ya no se
-            encuentra disponible en nuestra Carta de recomendaciones o puede que
-            se hayan comido nuestro ultimo plato
-            <a href="">pincha aqui</a> y encarga otra página pronto!! no
-            queremos que nadie se quede sin comer
-          </p>
-        </article>
+    <main>
+      <section>
+        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- item 1 de carrusel -->
+            <div class="carousel-item active">
+              <div class="banner-404"></div>
+              <div class="carousel-caption caption-error d-flex flex-column">
+                <h1
+                  class="display-3 error-fonts wow bounceInDown"
+                  data-wow-duration="1.7s"
+                >
+                  ¡oops!
+                </h1>
+                <h2
+                  class="display-3 error-fonts wow bounceInDown"
+                  data-wow-duration="1.7s"
+                >
+                  ERROR 404
+                </h2>
+                <p
+                  class="mt-5 error-content wow zoomInUp"
+                  data-wow-delay="0.6s"
+                  data-wow-duration="1.6s"
+                >
+                  Te pedimos disculpas, pero la página web que buscas ya no se
+                  encuentra disponible en nuestra Carta de recomendaciones o
+                  puede que se hayan comido nuestro ultimo plato
+                  <a href="index.html" class="link__error">pincha aqui </a>
+                  y encarga otra página pronto!! no queremos que nadie se quede
+                  sin comer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
