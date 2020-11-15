@@ -17,6 +17,18 @@
 .banner3 {
   background-image: url(../img/fondo-banner-1.jpg);
 }
+/* estilos para cambiar tipografia de carrucel y tamaño */
+.titulo-fuente {
+  font-family: "Xanh Mono", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.titulo-tamaño {
+  font-size: 4.5rem;
+}
+.subtitulo-tamaño {
+  font-size: 1.5rem;
+}
 .carrousel__principal-styles {
   /* carrousel-caption*/
   padding-bottom: 50px;
@@ -79,20 +91,6 @@
   color: white !important;
   border: none !important;
 }
-/* estilos para las animaciones */
-
-/* estilos para cambiar tipografia de carrucel y tamaño */
-.titulo-fuente {
-  font-family: "Xanh Mono", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-.titulo-tamaño {
-  font-size: 4.5rem;
-}
-.subtitulo-tamaño {
-  font-size: 1.5rem;
-}
 
 /* estilos para pagina de error */
 .banner-404 {
@@ -117,6 +115,26 @@
 .link__error {
   color: #edbb00;
   text-decoration: none;
+}
+
+/* estilos para la pagina de contactos */
+/* banner */
+
+.banner__contact {
+  background-image: url(../img/banner-contacto.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  background-blend-mode: soft-light;
+}
+.caption__contact {
+  padding-bottom: 11rem;
+  font-family: "Xanh Mono", sans-serif;
+}
+.heading__contact {
+  font-size: 5rem;
 }
 @media screen and (max-width: 768px) {
   /* media para carrusel */
@@ -152,5 +170,12 @@
   }
   .error-content {
     font-size: 1.5rem;
+  }
+  /* banner de contacto */
+  .caption__contact {
+    padding-bottom: 10rem;
+  }
+  .heading__contact {
+    font-size: 3rem;
   }
 }

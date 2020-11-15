@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Restoclic</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">Restoclick</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+              <li>
+              <a class="nav-link active" href="index.html">inicio</a>
+              <a class="nav-link" href="#">¿quienes somos?</a>
+              <a class="nav-link" href="#">productos</a>
+              <a class="nav-link" href="contacto.html">contacto</a>
+              <a class="nav-link" href="#" data-toggle="modal">inicar sesion</a>
+              <a class="nav-link" href="#modalBlogRestaurante"  data-toggle="modal" data-target="#modalBlogRestaurante">suscribite</a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <main>
+              <section>
+        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <!-- item 1 de carrusel -->
+            <div class="carousel-item active">
+              <div class="banner__contact"></div>
+              <div class="carousel-caption d-flex flex-column caption__contact" >
+                <h2
+                  class=" animated  bounceInDown heading__contact"
+                  
+                >
+                  Contáctanos
+                </h2>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="container">
+          <hr>
+          <article class="row">
+              <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                    <h3 class="mb-5">Envianos un mensaje</h3>
+                    <form>
+                      <div class="form-group">
+                        <label for="Name">Nombre y Apellido</label>
+                        <input type="text" placeholder="Pablo Juarez" required class="form-control">
+                      </div>
+                        <div class="form-group">
+                          <label for="e-mail">E-mail</label>
+                          <input type="e-mail" placeholder="pablo-juarez@gmail.com" required class="form-control">
+        
+                        </div>
+                      <div class="form-group">
+                        <label>Deja tu comentario</label>
+                        <textarea class="form-control" placeholder="Ingrese su consulta aqui" rows="4" required></textarea>
+                      </div>
+                      <div class="form-group" class="form-check">
+                        <input type="checkbox" class="form-check-input" checked>
+                        <label class="form-check-label">Suscribite a nuestras novedades</label>
+                      </div>
+                      <div>
+                        <button class="btn btn-primary">
+                          <a
+                            href="404.html"
+                            class="btn-link text-white"
+                            type="submit"
+                            >enviar</a
+                          >
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-6 my-3">
+                    <h3 class="mb-5">Restoclick</h3>
+                    <p>Nos encontramos en Av. Corrientes 959, Ciudad de Buenos Aires
+                      Buenos Aires, Argentina.
+                      Tel: 4393 6115/4393 5034</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.43852823839!2d-58.45603510814709!3d-34.573428349440206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20CABA!5e0!3m2!1ses!2sar!4v1605133614397!5m2!1ses!2sar" class="w-100" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              </div>
+          </article>
+        </section>
+     <!-- Modal -->
+  <div
+  class="modal fade"
+  id="modalBlogRestaurante"
+  tabindex="-1"
+  aria-labelledby="modalBlogRestauranteLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBlogRestauranteLabel">Suscribíte a este blog</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+         <div>
+           <form class="bg-light p-4">
+             <div class="form-group">
+               <label>Nombre y Apellido</label>
+               <input type="text" name="Nombre" placeholder="Pablo Perez"
+               class="form-control" autocomplete="off" required>
+             
+             </div>
+         <div class="form-group">
+           <label for="mail">Email</label>
+           <input type="email" placeholder="ejemplo@gmail.com"
+           class="form-control" autocomplete="off" required>
+           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+         </div>
+         <div class="form-group form-check">
+           <input type="checkbox" class="form-check-input" checked>
+           <label class="form-check-label">¿Quieres recibir nuestras novedades?</label>
+         </div>
+         <button type="submit" class="btn btn-success">Enviar</button>
+         </form>
+      </div>
+      </form>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-dismiss="modal"
+        >
+          Salir
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer></footer>
+       <!-- jQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+  </body>
+  
+  
+</html>
