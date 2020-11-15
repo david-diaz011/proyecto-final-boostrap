@@ -80,9 +80,7 @@
   border: none !important;
 }
 /* estilos para las animaciones */
-.wow {
-  visibility: hidden;
-}
+
 /* estilos para cambiar tipografia de carrucel y tamaño */
 .titulo-fuente {
   font-family: "Xanh Mono", sans-serif;

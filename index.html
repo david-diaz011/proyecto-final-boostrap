@@ -158,16 +158,21 @@
                 class="carousel-caption d-flex flex-column carrousel__principal-styles"
               >
                 <h5
-                  class="mb-4 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal"
+                  class="mb-4 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal animated bounceIn delay-1s"
                 >
                   DEL RESTAURANTE A TU CASA
                 </h5>
-                <p class="mb-4 mb-md-4 titulo-fuente subtitulo-tamaño">
+                <p
+                  class="mb-4 mb-md-4 titulo-fuente subtitulo-tamaño animated bounceInLeft delay-2s"
+                >
                   Te traemos las mejores recetas totalmente profesionales de la
                   mano de expertos en la gastronomia y a un click de distancia
                 </p>
                 <p class="mt-5">
-                  <a data-scroll href="#inicio" class="caption__boton-principal"
+                  <a
+                    data-scroll
+                    href="#inicio"
+                    class="caption__boton-principal animated rollIn delay-2s"
                     >conoce mas</a
                   >
                 </p>
@@ -178,16 +183,20 @@
               <div class="banner banner2"></div>
               <div class="carousel-caption carrousel__principal-styles">
                 <h5
-                  class="mb-5 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal"
+                  class="mb-5 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal animated bounceInDown slow"
                 >
                   ¿NO HAY GANAS DE COCINAR?
                 </h5>
-                <p class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño">
+                <p
+                  class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño animated zoomInRight slow"
+                >
                   No te preocupes, entra a nuestra tienda y pedí los platos
                   gourmet que desees te lo llevamos directo a tu casa
                 </p>
                 <p class="mt-5">
-                  <a href="#" class="caption__boton-principal"
+                  <a
+                    href="#"
+                    class="caption__boton-principal animated bounceInUp slow"
                     >nuestros productos</a
                   >
                 </p>
@@ -200,11 +209,13 @@
                 class="carousel-caption d-md-block carrousel__principal-styles"
               >
                 <h5
-                  class="mb-5 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal"
+                  class="mb-5 mb-md-4 titulo-fuente titulo-tamaño headding_caption-principal animated flipInX slow"
                 >
                   ¡RECIBÍ NOVEDADES A DIARIO!
                 </h5>
-                <p class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño">
+                <p
+                  class="mb-5 mb-md-4 titulo-fuente subtitulo-tamaño animated bounceInLeft slow"
+                >
                   receta del dia, consejos, tips de salud, notas y mucho mas te
                   esperan del otro lado de la subscricion a nuestro newsletter
                 </p>
@@ -213,7 +224,7 @@
                     href="#modalBlogRestaurante"
                     data-toggle="modal"
                     data-target="#modalBlogRestaurante"
-                    class="caption__boton-principal"
+                    class="caption__boton-principal animated fadeInUp slow"
                     >subscribite</a
                   >
                 </p>
@@ -248,8 +259,8 @@
         <article class="col-12 col-lg-8 mr-5">
           <div class="row">
             <!-- card 1 -->
-            <div class="col-12 mt-4 wow fadeInLeft" data-wow-delay="0.1s">
-              <div class="card mb-4">
+            <div class="col-12 mt-4">
+              <div class="card mb-4 wow fadeInLeft" data-wow-delay="0.1s">
                 <div class="row no-gutters">
                   <div class="col-md-4">
                     <img
@@ -260,7 +271,7 @@
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">
+                      <h5 class="card-title" id="inicio">
                         3 tips para llevar una aliemntacion saludable
                       </h5>
                       <p class="card-text">
@@ -294,11 +305,7 @@
               </div>
             </div>
             <!-- card 2 -->
-            <div
-              class="col-12 mt-4 wow fadeInLeft"
-              data-wow-delay="0.1s"
-              id="inicio"
-            >
+            <div class="col-12 mt-4 wow fadeInLeft" data-wow-delay="0.1s">
               <div class="card mb-4">
                 <div class="row no-gutters">
                   <div class="col-md-4">
@@ -616,7 +623,7 @@
         new WOW().init();
       });
       var scroll = new SmoothScroll('a[href*="#"]', {
-        offset: 450,
+        offset: 80,
         speed: 1000,
       });
     </script>
