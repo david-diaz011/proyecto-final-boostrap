@@ -301,70 +301,7 @@
     font-size: 24px;
   }
 }
-
-@media screen and (max-width: 576px) {
-  /*  medias par navbar */
-  .navbar-brand {
-    padding: 20px 15px;
-  }
-  .navbar-collapse {
-    background: black;
-  }
-  .nav-link {
-    text-align: center;
-  }
-  /* media para carrousel */
-  .carousel-caption {
-    padding-bottom: 40px;
-  }
-  /* clases para modificar el titulo y subtitulo del baner */
-  .titulo-tamaño {
-    font-size: 2rem;
-  }
-  .subtitulo-tamaño {
-    font-size: 1rem;
-  }
-  .error-fonts {
-    font-size: 3rem;
-  }
-  .error-content {
-    font-size: 1.5rem;
-  }
-  /* banner de contacto */
-  .caption__contact {
-    padding-bottom: 10rem;
-  }
-  .heading__contact {
-    font-size: 3rem;
-  }
-  /* estilos para footer */
-
-  .text-center-responsive {
-    text-align: center;
-  }
-  .space-bottom__modifed {
-    margin-bottom: 2rem;
-  }
-  .jus {
-    justify-items: center;
-  }
-  /* estilos de pagina de entrada-1 */
-  .row_ancho {
-    height: 80%;
-  }
-  .responsive_headding {
-    font-size: 2rem;
-  }
-  /* estilos para login */
-  .baner_fondo-login {
-    background-color: rgba(0, 0, 0, 0.705);
-    background-blend-mode: soft-light;
-  }
-  .border_mod {
-    border: none !important;
-  }
-}
-
+/* estilos para pagina de nosotros */
 .team-boxed {
   color: #313437;
   background-color: #eef4f7;
@@ -443,4 +380,77 @@
 
 .team-boxed .social a:hover {
   opacity: 1;
+}
+
+@media screen and (max-width: 576px) {
+  /*  medias par navbar */
+  .navbar-brand {
+    padding: 20px 15px;
+  }
+  .navbar-collapse {
+    background: black;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  /* media para carrousel */
+  .carousel-caption {
+    padding-bottom: 40px;
+  }
+  /* clases para modificar el titulo y subtitulo del baner */
+  .titulo-tamaño {
+    font-size: 2rem;
+  }
+  .subtitulo-tamaño {
+    font-size: 1rem;
+  }
+  .error-fonts {
+    font-size: 3rem;
+  }
+  .error-content {
+    font-size: 1.5rem;
+  }
+  /* banner de contacto */
+  .caption__contact {
+    padding-bottom: 10rem;
+  }
+  .heading__contact {
+    font-size: 3rem;
+  }
+  /* estilos para footer */
+
+  .text-center-responsive {
+    text-align: center;
+  }
+  .space-bottom__modifed {
+    margin-bottom: 2rem;
+  }
+  .jus {
+    justify-items: center;
+  }
+  /* estilos de pagina de entrada-1 */
+  .row_ancho {
+    height: 80%;
+  }
+  .responsive_headding {
+    font-size: 2rem;
+  }
+  /* estilos para login */
+  .baner_fondo-login {
+    background-color: rgba(0, 0, 0, 0.705);
+    background-blend-mode: soft-light;
+  }
+  .border_mod {
+    border: none !important;
+  }
+  .responsive_headding-cuidado-h1 {
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+  }
+  .responsive_headding-cuidado-h2 {
+    font-size: 1rem;
+  }
+  .p_responsive {
+    padding-top: 50px;
+  }
 }
