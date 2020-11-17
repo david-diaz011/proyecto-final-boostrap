@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>Restoclic</title>
+    <meta name="keywords" content="Restaurant, Resto, Restoclick, Comidas" />
+    <meta
+      name="description"
+      content="un restaurante hecho por devs para devs, disfruta de esta exquisita experiencia digital"
+    />
+    <meta name="autor" content="Nexus Developers" />
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fuente2 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <script
+      src="https://kit.fontawesome.com/7ed0c5a50f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- navegacion -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top top-nav-collapse"
+      >
+        <div class="container">
+          <div>
+            <img
+              src="./img/logo-oficial.png"
+              alt="imagen del logo de restoclick"
+              class="small-logo"
+            />
+            <a class="navbar-brand" href="index.html">Restoclick</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" href="index.html">inicio</a>
+              <a class="nav-link" href="#">¿quienes somos?</a>
+              <a class="nav-link" href="#">productos</a>
+              <a class="nav-link" href="contacto.html">contacto</a>
+              <a class="nav-link active" href="login.html">inicar sesion</a>
+              <a
+                class="nav-link"
+                href="#modalBlogRestaurante"
+                data-toggle="modal"
+                data-target="#modalBlogRestaurante"
+                >suscribite</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- modal nav-banner -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalBlogRestaurante"
+          tabindex="-1"
+          aria-labelledby="modalBlogRestauranteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBlogRestauranteLabel">
+                  Suscribíte a este blog
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input
+                          type="text"
+                          name="Nombre"
+                          placeholder="Pablo Perez"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          checked
+                        />
+                        <label class="form-check-label"
+                          >¿Quieres recibir nuestras novedades?</label
+                        >
+                      </div>
+                      <button class="btn btn-success btn-block">
+                        <a
+                          href="404.html"
+                          class="btn-link text-white text-decoration-none"
+                          type="submit"
+                          >enviar</a
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- modal-login -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalLogin"
+          tabindex="-1"
+          aria-labelledby="modalLoginLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalLoginLabel">
+                  recupera tu contraseña
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <p>
+                      Por favor ingrese el correo electrónico con el cual se
+                      registró y le estaremos enviando a su casilla de mail los
+                      pasos para cambiar la contraseña
+                    </p>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+
+                      <button class="btn btn-success btn-block">
+                        <a
+                          href="404.html"
+                          class="btn-link text-white text-decoration-none"
+                          type="submit"
+                          >enviar</a
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- carrusel -->
+    </header>
+    <!-- formulario de login -->
+    <main
+      class="baner_fondo-login container-fluid d-flex flex-column justify-content-lg-end justify-content-md-center"
+    >
+      <section class="row justify-content-center justify-content-lg-start mb-3">
+        <article class="col-11 col-md-5 mb-1 ml-lg-5 p-3 border_mod">
+          <h1 class="text-light mb-5 text-center">Bienvenido</h1>
+          <form class="mb-4 form__font-2">
+            <div class="form-group mb-4">
+              <label for="Email" class="mb-3 text-white font-weight-bold"
+                >Email</label
+              >
+              <input
+                placeholder="ingresa tu Email"
+                type="email"
+                class="form-control bg_form border-0"
+                id="Email"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
+            <div class="form-group mb-4">
+              <label for="contraseña" class="font-weight-bold text-white"
+                >contraseña</label
+              >
+              <input
+                placeholder="ingresa tu contraseña"
+                type="password"
+                class="form-control bg_form border-0 mb-3"
+                id="contraseña"
+                required
+              />
+              <a
+                data-toggle="modal"
+                data-target="#modalLogin"
+                href="#modalLogin"
+                id="emailHelp"
+                class="form-text text-white font-weight-bold text-decoration-none"
+                >¿olvidaste tu contraseña?</a
+              >
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-outline-* btn_modifc-login btn-block"
+            >
+              iniciar sesion
+            </button>
+          </form>
+          <p class="font-weight-bold text-white text-center form__font-2">
+            o inicia sesion con
+          </p>
+          <div class="d-flex justify-content-around form__font-2">
+            <a
+              href="404.html"
+              class="btn btn-outline-* flex-grow-1 mr-2 btn_login btn_modifc-google d-flex align-items-center justify-content-center"
+            >
+              <i class="fab fa-google lead mr-3"></i>Google
+            </a>
+            <a
+              href="404.html"
+              class="btn btn-outline-* flex-grow-1 ml-2 btn_login btn_facebook d-flex align-items-center justify-content-center"
+            >
+              <i class="fab fa-facebook-f lead mr-3"></i> facebook
+            </a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- jQuery -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- smoth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+  </body>
+</html>

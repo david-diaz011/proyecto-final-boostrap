@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- keywords -->
+    <meta name="keywords" content="Restaurant, Resto, Restoclick, Comidas" />
+    <!-- description -->
+    <meta
+      name="description"
+      content="un restaurante hecho por devs para devs, disfruta de esta exquisita experiencia digital"
+    />
+    <!-- autor -->
+    <meta
+      name="autor"
+      content="Nexus Developers/Molina Maria Pia, Sumerinde Carlos Alberto, Carrión Isaías,Diaz David "
+    />
+    <title>Restoclick</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <script
+      src="https://kit.fontawesome.com/7ed0c5a50f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- navegacion -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top animated bounceInLeft"
+      >
+        <div class="container">
+          <div>
+            <img src="./img/logo-oficial.png" alt="" class="small-logo" />
+            <a class="navbar-brand" href="index.html">Restoclick</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link text-white" href="index.html">inicio</a>
+              <a class="nav-link text-white" href="#">¿quienes somos?</a>
+              <a class="nav-link text-white" href="#">productos</a>
+              <a class="nav-link text-white" href="contacto.html">contacto</a>
+              <a class="nav-link text-white" href="login.html">inicar sesion</a>
+              <a
+                class="nav-link text-white"
+                href="#modalBlogRestaurante"
+                data-toggle="modal"
+                data-target="#modalBlogRestaurante"
+                >suscribite</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- modal nav-banner -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalBlogRestaurante"
+          tabindex="-1"
+          aria-labelledby="modalBlogRestauranteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBlogRestauranteLabel">
+                  Suscribíte a este blog
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input
+                          type="text"
+                          name="Nombre"
+                          placeholder="Pablo Perez"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          checked
+                        />
+                        <label class="form-check-label"
+                          >¿Quieres recibir nuestras novedades?</label
+                        >
+                      </div>
+                      <button class="btn btn-success btn-block">
+                        <a
+                          href="404.html"
+                          class="btn-link text-white text-decoration-none"
+                          type="submit"
+                          >enviar</a
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- carrusel -->
+    </header>
+    <!-- banner de entrada -->
+    <main>
+      <section class="banner__entrada-fondo entrada-3 container-fluid">
+        <article
+          class="row justify-content-center align-content-center row_ancho"
+        >
+          <div
+            class="col-12 d-flex flex-column justify-content-center text-center"
+          >
+            <h1 class="responsive_headding titulo-fuente animated fadeInLeft">
+              Nuestra prioridad es cuidarte
+            </h1>
+            <h3 class="responsive_headding titulo-fuente animated fadeInLeft">
+              ¡Por eso incorporamos nuevos desayunos y meriendas hiper
+              saludables para vos!
+            </h3>
+          </div>
+          <div
+            class="col-12 col-md-5 mt-4 text-center d-flex align-content-center justify-content-center animated fadeInRight"
+          >
+            <i class="fas fa-user align-self-center mr-2"></i>
+            <h5>por María Pia</h5>
+          </div>
+        </article>
+        <!-- agregado solo para entradas de comida -->
+        <div class="row mb-5 w-50 ml-auto animated fadeInRight">
+          <div class="col-12 col-md-4 text-center">
+            <i class="far fa-clock"></i>
+            <span>15 minutos</span>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="fas fa-signal"></i>
+            <span>facil</span>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <i class="far fa-comments"></i>
+            <span>5 comentarios</span>
+          </div>
+        </div>
+      </section>
+      <!-- contenido de entrada -->
+      <section class="container">
+        <article class="row">
+          <!-- titulo de card 1 -->
+          <div
+            class="col-12 mt-5 text-center color_entrada-1 p-1 wow fadeIn"
+            data-wow-duration="2s"
+          >
+            <h3 class="titulo-fuente">Opción 1</h3>
+          </div>
+          <!-- card-1 izquierda -->
+          <div class="col-sm-12 col-md-12 col-lg-6 animated bounceInLeft slow">
+            <div class="card my-4">
+              <div class="card-body">
+                <img
+                  src="img/desayuno saludabler.jpg"
+                  alt="desayuno saludable"
+                  class="w-100"
+                />
+                <h6 class="card-title text-center my-2">
+                  Bowl de yogurt griego con frutas
+                </h6>
+                <p class="card-text text-center">
+                  Sacale provecho a los frutos de estación con esta rica opción
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card-1-derecha -->
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 mt-5 animated bounceInRight slow"
+          >
+            <ul class="list-group text-center text-white">
+              <h3 class="titulo-fuente text-dark">ingredientes</h3>
+              <li class="list-group-item color_entrada-1">
+                1 taza de yogurt griego
+              </li>
+              <li class="list-group-item color_entrada-1">
+                1 taza de arándanos
+              </li>
+              <li class="list-group-item color_entrada-1">1 taza de fresas</li>
+              <li class="list-group-item color_entrada-1">
+                Granola de avena sin azúcar
+              </li>
+              <li class="list-group-item color_entrada-1">
+                Almendras,nuez (opcional)
+              </li>
+              <li class="list-group-item color_entrada-1">2 platanos</li>
+            </ul>
+          </div>
+          <!-- titulo para card 2 -->
+          <div
+            class="col-12 mt-5 text-center color_entrada-1 p-1 wow fadeIn"
+            data-wow-duration="2s"
+          >
+            <h3 class="titulo-fuente">Opción 2</h3>
+          </div>
+          <!-- card-2-izquierda -->
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 mt-auto wow bounceInLeft"
+            data-wow-duration="2s"
+          >
+            <div class="card my-4">
+              <div class="card-body">
+                <img
+                  src="img/palta y huevo.jpg"
+                  alt="desayuno saludable"
+                  class="w-100"
+                />
+                <h6 class="card-title text-center my-2">
+                  Tostadas con huevo y palta
+                </h6>
+                <p class="card-text text-center">
+                  Rica en proteinas y grasas saludables
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card-2-derecha -->
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 mt-5 wow bounceInRight"
+            data-wow-duration="2s"
+          >
+            <ul class="list-group text-center text-white">
+              <h3 class="titulo-fuente text-dark">ingredientes</h3>
+              <li class="list-group-item color_entrada-1">
+                2 rebanadas de pan integral tostado
+              </li>
+              <li class="list-group-item color_entrada-1">2 huevos cocidos</li>
+              <li class="list-group-item color_entrada-1">1 taza de fresas</li>
+              <li class="list-group-item color_entrada-1">1 aguacate</li>
+              <li class="list-group-item color_entrada-1">
+                Jugo de medio limón
+              </li>
+              <li class="list-group-item color_entrada-1">Pimienta al gusto</li>
+              <li class="list-group-item color_entrada-1">Oregano</li>
+              <li class="list-group-item color_entrada-1">
+                Aceite de oliva extra-virgen
+              </li>
+              <li class="list-group-item color_entrada-1">Sal</li>
+            </ul>
+          </div>
+          <!-- titulo para card-3 -->
+          <div
+            class="col-12 my-5 text-center color_entrada-1 p-1 wow fadeIn"
+            data-wow-duration="2s"
+          >
+            <h3 class="titulo-fuente">Opción 3</h3>
+          </div>
+          <!-- card-3-izquierda -->
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 mt-auto wow bounceInLeft"
+            data-wow-duration="2s"
+          >
+            <div class="card my-4">
+              <div class="card-body">
+                <img
+                  src="img/tostadas.jpg"
+                  alt="desayuno saludable"
+                  class="w-100"
+                />
+                <h6 class="card-title text-center my-2">Tostadas Francesas</h6>
+                <p class="card-text text-center">
+                  Si te apetece comenzar con energías el día, nada mejor que
+                  saborear unas tostadas francesas
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- card-3-derecha -->
+          <div
+            class="col-sm-12 col-md-12 col-lg-6 wow bounceInRight"
+            data-wow-duration="2s"
+          >
+            <ul class="list-group text-center text-white">
+              <h3 class="titulo-fuente text-dark">ingredientes</h3>
+              <li class="list-group-item color_entrada-1">
+                6 rebanadas gruesas de pan duro o de molde
+              </li>
+              <li class="list-group-item color_entrada-1">2 huevos</li>
+              <li class="list-group-item color_entrada-1">250 ml de leche</li>
+              <li class="list-group-item color_entrada-1">
+                3 cucharadas de azúcar
+              </li>
+              <li class="list-group-item color_entrada-1">
+                Mantequilla para freír
+              </li>
+              <li class="list-group-item color_entrada-1">Oregano</li>
+              <li class="list-group-item color_entrada-1">
+                Una cucharadita de aromatizador de vainilla
+              </li>
+              <li class="list-group-item color_entrada-1">
+                Sirope, cremas, helado, rebanadas de fruta, crema de cacao
+              </li>
+            </ul>
+          </div>
+          <div
+            class="col-12 mt-5 text-center p-3 border-bottom wow bounceInLeft"
+            data-wow-duration="1s"
+          >
+            <h3 class="titulo-fuente">
+              dejanos tu comentario y compartinos que te Pareció la receta
+            </h3>
+          </div>
+        </article>
+        <!-- conentarios -->
+        <article>
+          <!-- caja de comentarios -->
+          <div
+            class="row comentarios justify-content-center wow flipInY"
+            data-wow-duration="2s"
+          >
+            <div class="col-12 col-md-6">
+              <form
+                action=""
+                class="form_comentarios d-flex justify-content-end flex-wrap"
+              >
+                <textarea name="" id="" placeholder="Comentario"></textarea>
+                <a href="404.html" class="btn btn-success" type="button"
+                  >enviar</a
+                >
+              </form>
+              <!--  persona 1-->
+              <div class="media">
+                <img src="img/persona1.jpg" width="64" height="64" alt="" />
+                <div class="media-body">
+                  <p class="nombre">Beto Juarez <span>8:20pm, Hoy</span></p>
+                  <p class="comentario">
+                    no puedo creerlo!!! lo probé y es riquismo
+                  </p>
+                  <div class="botones text-right">
+                    <a href="404.html">Responder</a>
+                    <a href="404.html">Editar</a>
+                    <a href="404.html">Borrar</a>
+                  </div>
+                  <!--  persona 2-->
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">
+                        Carlos Caseres <span>11:11am, Hoy</span>
+                      </p>
+                      <p class="comentario">
+                        muero de ganas por probarla ya mismoo!!!, voy al
+                        supermercado a buscar las cosas que necesito, tengo que
+                        probar esto!
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  persona 3-->
+                  <div class="media">
+                    <img src="img/persona3.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
+                      <p class="comentario">
+                        se ve tan rico madre mia, ¡hacen desear!
+                      </p>
+                      <div class="botones text-right">
+                        <a href="#">Responder</a>
+                        <a href="#">Editar</a>
+                        <a href="#">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  persona 4-->
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">
+                        Jose Touring <span>9:30pm, Hoy</span>
+                      </p>
+                      <p class="comentario">
+                        me salió todo mal :(, creo que alguno de los
+                        ingredientes no me rindió bien y me arruino el resultado
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  persona 5-->
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">Alan Liar <span>10am, Hoy</span></p>
+                      <p class="comentario">
+                        con esto dejo de preocuparme por ver que tomare luego
+                        del gym, gracias Restoclik!!
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-dark mt-5">
+      <section class="container">
+        <article class="row justify-content-between">
+          <!-- primera columna con logo y texto -->
+          <div
+            class="col-12 col-lg-2 d-flex align-items-center justify-content-center space-bottom__modifed"
+          >
+            <img
+              src="./img/logo-oficial.png"
+              alt="logo oficial de Restoclic"
+              class="small-logo"
+            />
+            <h5 class="text-white">Restoclik</h5>
+          </div>
+          <!--  navegacion -->
+          <div class="col-12 col-md-2 d-flex centrado-horizontal-resp">
+            <ul class="navbar-nav mt-3">
+              <li>
+                <a href="" class="text-muted color-hover">inicio</a>
+              </li>
+              <li>
+                <a href="" class="text-muted color-hover">¿quienes somos?</a>
+              </li>
+              <li><a href="" class="text-muted color-hover">productos</a></li>
+              <li><a href="" class="text-muted color-hover"> contacto</a></li>
+              <li>
+                <a href="" class="text-muted color-hover"> iniciar sesión</a>
+              </li>
+              <li><a href="" class="text-muted color-hover">subscribite</a></li>
+            </ul>
+          </div>
+          <!-- nav-legales -->
+          <div
+            class="col-12 col-md-2 d-flex centrado-horizontal-resp space-bottom__modifed"
+          >
+            <ul class="navbar-nav">
+              <li>
+                <a href="" class="text-muted color-hover"></a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Régimen de transparencia</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Protocolo de entrega</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover">
+                  Profesionales a cargo
+                </a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"> Legales </a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Administración
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- horarios -->
+          <div
+            class="col-12 col-md-3 d-flex flex-column justify-content-center text-muted space-bottom__modifed"
+          >
+            <h6 class="text-center-responsive">Horarios de atencion:</h6>
+
+            <p class="text-center-responsive">
+              Martes a Domingos: 11hs-15hs, 20:00hs-00:00hs
+            </p>
+            <p class="text-center-responsive">Feriados: 20:00hs-00:00hs</p>
+          </div>
+          <!-- redes -->
+          <div
+            class="col-12 col-md-2 d-flex flex-column align-items-center justify-content-center text-muted"
+          >
+            <h6 class="text-center">redes sociales</h6>
+            <a href="404.html"
+              ><i
+                class="fab fa-facebook-square fa-2x text-muted color-hover"
+              ></i
+            ></a>
+            <a href="404.html"
+              ><i class="fab fa-twitter-square fa-2x text-muted color-hover"></i
+            ></a>
+            <a href="404.html"
+              ><i
+                class="fab fa-instagram-square fa-2x text-muted color-hover"
+              ></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+
+    <!-- jQuery -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- smoth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        new WOW().init();
+      });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 80,
+        speed: 1000,
+      });
+    </script>
+  </body>
+</html>

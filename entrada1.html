@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!-- keywords -->
+    <meta name="keywords" content="Restaurant, Resto, Restoclick, Comidas" />
+    <!-- description -->
+    <meta
+      name="description"
+      content="un restaurante hecho por devs para devs, disfruta de esta exquisita experiencia digital"
+    />
+    <!-- autor -->
+    <meta name="autor" content="Nexus Developers" />
+    <title>Restoclick</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Material Design Bootstrap -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Your custom styles (optional) -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fuentes de google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos -->
+    <script
+      src="https://kit.fontawesome.com/7ed0c5a50f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- navegacion -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top animated bounceInLeft"
+      >
+        <div class="container">
+          <div>
+            <img src="./img/logo-oficial.png" alt="" class="small-logo" />
+            <a class="navbar-brand" href="#">Restoclick</a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link" href="#">inicio</a>
+              <a class="nav-link" href="#">¿quienes somos?</a>
+              <a class="nav-link" href="#">productos</a>
+              <a class="nav-link" href="contacto.html">contacto</a>
+              <a class="nav-link" href="#">inicar sesion</a>
+              <a
+                class="nav-link"
+                href="#modalBlogRestaurante"
+                data-toggle="modal"
+                data-target="#modalBlogRestaurante"
+                >suscribite</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- modal nav-banner -->
+      <section>
+        <article
+          class="modal fade"
+          id="modalBlogRestaurante"
+          tabindex="-1"
+          aria-labelledby="modalBlogRestauranteLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalBlogRestauranteLabel">
+                  Suscribíte a este blog
+                </h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div>
+                    <form class="bg-light p-4">
+                      <div class="form-group">
+                        <label>Nombre y Apellido</label>
+                        <input
+                          type="text"
+                          name="Nombre"
+                          placeholder="Pablo Perez"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="mail">Email</label>
+                        <input
+                          type="email"
+                          placeholder="ejemplo@gmail.com"
+                          class="form-control"
+                          autocomplete="off"
+                          required
+                        />
+                      </div>
+                      <div class="form-group form-check">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          checked
+                        />
+                        <label class="form-check-label"
+                          >¿Quieres recibir nuestras novedades?</label
+                        >
+                      </div>
+                      <button class="btn btn-success btn-block">
+                        <a
+                          href="404.html"
+                          class="btn-link text-white text-decoration-none"
+                          type="submit"
+                          >enviar</a
+                        >
+                      </button>
+                    </form>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- carrusel -->
+    </header>
+    <!-- banner de entrada -->
+    <main>
+      <section class="banner__entrada-fondo">
+        <article
+          class="row justify-content-center align-content-center row_ancho"
+        >
+          <div
+            class="col-12 d-flex flex-column justify-content-center text-center"
+          >
+            <h1 class="responsive_headding titulo-fuente animated fadeInLeft">
+              Quiche Lorraine
+            </h1>
+            <h3 class="responsive_headding titulo-fuente animated fadeInLeft">
+              ¡una clasica que no te podes perder!
+            </h3>
+          </div>
+          <div
+            class="col-12 col-md-5 mt-4 text-center d-flex align-content-center justify-content-center animated fadeInRight"
+          >
+            <i class="fas fa-user align-self-center mr-2"></i>
+            <h5>por david</h5>
+          </div>
+        </article>
+        <!-- agregado solo para entradas de comida -->
+        <div class="row mb-5 w-50 ml-auto animated fadeInRight">
+          <div class="col-12 col-md-4">
+            <i class="far fa-clock"></i>
+            <span>1 hora</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <i class="fas fa-signal"></i>
+            <span>intermedio</span>
+          </div>
+          <div class="col-12 col-md-4">
+            <i class="far fa-comments"></i>
+            <span>5 comentarios</span>
+          </div>
+        </div>
+      </section>
+      <!-- contenido de entrada -->
+      <section class="container">
+        <article class="row mt-5">
+          <div class="col-12 col-md-6 animated fadeInLeft">
+            <img
+              class="w-100"
+              src="./img/contenido-entrada-1.jpg"
+              alt="imagen de una tarta Quiche Lorraine"
+            />
+          </div>
+          <!-- primera fila de la entrada texto e imagen -->
+          <div class="col-12 col-md-6 animated fadeInRight">
+            <p>
+              La quiche lorraine es probablemente la receta de quiche más
+              conocida. Una receta que lleva en su relleno bacon o panceta
+              ahumada, nata, huevos y queso y que está absolutamente deliciosa.
+            </p>
+            <p>
+              La quiche viene de la región francesa de Lorena, frontera con
+              Alemania, y en cuyo dialecto se denomina Kuchen al pastel. La
+              receta de quiche original de esta zona es la quiche lorraine, que
+              se elabora con masa brisa o quebrada, con una salsa de huevo y
+              nata, que en francés se denomina “migaine”. En el siglo XIX se le
+              añadió el bacon o panceta ahumada, típicos de la quiche lorraine,
+              y de la cual parten el resto de recetas.
+            </p>
+            <p>
+              son una opción estupenda para una cena rápida y fácil, porque no
+              tienen apenas complicación y en poco tiempo tendremos un plato que
+              gustará hasta a los paladares más exigentes.
+            </p>
+          </div>
+
+          <div
+            class="col-12 mt-5 text-center color_entrada-1 p-3 wow fadeIn"
+            data-wow-duration="2s"
+          >
+            <h3 class="titulo-fuente">Elaboración de la masa</h3>
+          </div>
+          <!-- ingredientes-1 -->
+          <div
+            class="col-12 col-md-4 d-flex flex-column mt-5 justify-content-center wow fadeInLeft"
+          >
+            <h3 class="mb-4 text-center titulo-fuente">ingredientes</h3>
+            <ul class="list-group">
+              <li class="list-group-item p-4 color_entrada-1">
+                200gr de harina 0000,
+              </li>
+              <li class="list-group-item p-4 color_entrada-1">
+                100 gr de manteca.
+              </li>
+              <li class="list-group-item p-4 color_entrada-1">1 huevo.</li>
+              <li class="list-group-item p-4 color_entrada-1">4 gr de sal.</li>
+            </ul>
+          </div>
+          <!--   elaboracion-1 -->
+          <div class="col-12 col-md-7 mt-5 wow fadeInRight">
+            <h3 class="text-center mb-3 titulo-fuente">Preparación</h3>
+            <p>
+              Para poder preparar la masa de forma rápida podemos meter todo en
+              la procesadora y estará en unos minutos. Aquí lo único que
+              tendremos en cuenta será que la manteca esté fría ya que la
+              máquina proporciona calor y puede ablandar la masa de más.
+            </p>
+            <p>
+              Si no tenemos una procesadora, hacerla a mano es súper fácil
+              (¡Esta es la forma preferida de nuestro chef!). Mezclaremos la sal
+              con el harina, y luego incorporaremos la manteca fría cortada en
+              cubos. Con una espátula uniremos todo hasta que quede una mezcla
+              arenosa. A continuación, incorporaremos el huevo previamente
+              batido, seguiremos uniendo la mezcla con la espátula hasta que
+              lograr una masa que no se pegue.
+            </p>
+            <p>
+              Consejo de nuestro ayudante de cocina: siempre trabajaremos con
+              una espátula o cuchara ya que el calor de las manos puede ablandar
+              la manteca, lo que nos llevará a agregar más harina y eso hará que
+              no consigamos la textura deseada.
+            </p>
+            <p>
+              Meteremos la masa en la heladera en un bol tapado preferentemente
+              por un film. Vamos a dejar que repose durante una hora. Pasado
+              este tiempo, la retiraremos del frío y con palo de amasar le
+              daremos la forma y el tamaño de la tartera o pizzera (previamente
+              enmantecado) que elegiste para cocinarla. ¡Ten en cuenta que debe
+              tener una altura de más o menos 0,5cm!. Le pincharemos toda la
+              superficie con un tenedor para evitar que se infle. La
+              pre-cocinaremos en un horno precalentado a 180° durante 10
+              minutos.
+            </p>
+          </div>
+          <div
+            class="col-12 mt-5 text-center color_entrada-1 p-3 wow fadeIn"
+            data-wow-duration="2s"
+          >
+            <h3 class="titulo-fuente">elaboracion del relleno</h3>
+          </div>
+          <!-- ingredientes-2 -->
+          <div
+            class="col-12 col-md-4 d-flex flex-column mt-5 justify-content-center wow fadeInLeft"
+          >
+            <h3 class="mb-4 text-center titulo-fuente">ingredientes</h3>
+            <ul class="list-group">
+              <li class="list-group-item p-4 color_entrada-1">
+                500gr. de crema de leche
+              </li>
+              <li class="list-group-item p-4 color_entrada-1">
+                200 gr. de panceta ahumada o bacon.
+              </li>
+              <li class="list-group-item p-4 color_entrada-1">3 huevos.</li>
+              <li class="list-group-item p-4 color_entrada-1">
+                Nuez moscada y pimienta negra molida (al gusto).
+              </li>
+            </ul>
+          </div>
+          <!-- preparacion-2 -->
+          <div class="col-12 col-md-7 mt-5 wow fadeInRight">
+            <h3 class="text-center mb-3 titulo-fuente">Preparación</h3>
+            <p>
+              Cortamos la panceta en tiritas y la salteamos en una sartén. No es
+              necesario añadir ni aceite ni mantequilla ya que la panceta tiene
+              bastante grasa y la irá soltando a medida que se vaya cocinando.
+              No es necesario tostarla demasiado, simplemente la doramos un poco
+              y reservamos.
+            </p>
+            <p>
+              En un bol echamos la crema de leche y los huevos previamente
+              batidos. Mezclamos bien.
+            </p>
+            <p>
+              Añadimos una pizca de nuez moscada y otra de pimienta negra
+              molida, batimos.
+            </p>
+            <p>
+              Cuando vemos que la panceta está lista la añadimos al bol y
+              removemos para integrar
+            </p>
+            <p>
+              Vertemos la mezcla sobre la masa prehorneada. Metemos al horno ya
+              caliente a 180º C unos 20 o 25 minutos, hasta que veamos que el
+              huevo está cuajado.
+            </p>
+            <p>
+              Comprobamos que la quiche está horneada pinchándola con un
+              palillo. Si sale seco es que ya está.
+            </p>
+          </div>
+          <!-- seccion de video -->
+          <div
+            class="col-12 mt-5 text-center p-3 border-bottom wow zoomInDown"
+            data-wow-duration="3s"
+          >
+            <h3 class="titulo-fuente">
+              ¿Aun no te convencemos? te dejamos un video para que veas lo fácil
+              que es ¡animate!
+            </h3>
+          </div>
+          <div
+            class="col-12 mt-5 d-flex justify-content-center wow flipInX"
+            data-wow-duration="2s"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/hnQdzOaZseo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div
+            class="col-12 mt-5 text-center p-3 border-bottom wow bounceInLeft"
+            data-wow-duration="1s"
+          >
+            <h3 class="titulo-fuente">
+              dejanos tu comentario y compartinos que te pacolor_entrada-1
+            </h3>
+          </div>
+        </article>
+
+        <!-- conentarios -->
+        <article>
+          <div
+            class="row comentarios justify-content-center wow flipInY"
+            data-wow-duration="2s"
+          >
+            <div class="col-12 col-md-6">
+              <form
+                action=""
+                class="form_comentarios d-flex justify-content-end flex-wrap"
+              >
+                <textarea name="" id="" placeholder="Comentario"></textarea>
+                <a href="404.html" class="btn btn-success" type="button"
+                  >enviar</a
+                >
+              </form>
+
+              <div class="media">
+                <img src="img/persona1.jpg" width="64" height="64" alt="" />
+                <div class="media-body">
+                  <p class="nombre">Beto Juarez <span>8:20pm, Hoy</span></p>
+                  <p class="comentario">
+                    La comida Excelente, vengo preparando todas las
+                    recomendaciones increíbles el modo en el que explican me
+                    sale todoo!!
+                  </p>
+                  <div class="botones text-right">
+                    <a href="404.html">Responder</a>
+                    <a href="404.html">Editar</a>
+                    <a href="404.html">Borrar</a>
+                  </div>
+
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">
+                        Carlos Caseres <span>11:11am, Hoy</span>
+                      </p>
+                      <p class="comentario">
+                        muero de ganas por probarla ya mismoo!!!, voy al
+                        supermercado a buscar las cosas que necesito, tengo que
+                        probar esa tarta!
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="media">
+                    <img src="img/persona3.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
+                      <p class="comentario">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex
+                        ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </p>
+                      <div class="botones text-right">
+                        <a href="#">Responder</a>
+                        <a href="#">Editar</a>
+                        <a href="#">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">
+                        Jose Touring <span>9:30pm, Hoy</span>
+                      </p>
+                      <p class="comentario">
+                        me salió todo mal :(, creo que alguno de los
+                        ingredientes no me rindió bien y me arruino el resultado
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="media">
+                    <img src="img/persona2.jpg" width="64" height="64" alt="" />
+                    <div class="media-body">
+                      <p class="nombre">Alan Liar <span>10am, Hoy</span></p>
+                      <p class="comentario">
+                        esos momentos cuando ves una notificación de restoclick
+                        y mágicamente dejas de preocuparte en que vas a cocinar
+                        hoy porque ellos ya te resolvieron la vida
+                      </p>
+                      <div class="botones text-right">
+                        <a href="404.html">Responder</a>
+                        <a href="404.html">Editar</a>
+                        <a href="404.html">Borrar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer class="bg-dark mt-5">
+      <section class="container">
+        <article class="row justify-content-between">
+          <!-- primera columna con logo y texto -->
+          <div
+            class="col-12 col-lg-2 d-flex align-items-center justify-content-center space-bottom__modifed"
+          >
+            <img
+              src="./img/logo-oficial.png"
+              alt="logo oficial de Restoclic"
+              class="small-logo"
+            />
+            <h5 class="text-white">Restoclik</h5>
+          </div>
+          <!--  navegacion -->
+          <div class="col-12 col-md-2 d-flex centrado-horizontal-resp">
+            <ul class="navbar-nav mt-3">
+              <li>
+                <a href="" class="text-muted color-hover">inicio</a>
+              </li>
+              <li>
+                <a href="" class="text-muted color-hover">¿quienes somos?</a>
+              </li>
+              <li><a href="" class="text-muted color-hover">productos</a></li>
+              <li><a href="" class="text-muted color-hover"> contacto</a></li>
+              <li>
+                <a href="" class="text-muted color-hover"> iniciar sesión</a>
+              </li>
+              <li><a href="" class="text-muted color-hover">subscribite</a></li>
+            </ul>
+          </div>
+          <!-- nav-legales -->
+          <div
+            class="col-12 col-md-2 d-flex centrado-horizontal-resp space-bottom__modifed"
+          >
+            <ul class="navbar-nav">
+              <li>
+                <a href="" class="text-muted color-hover"></a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Régimen de transparencia</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Protocolo de entrega</a
+                >
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover">
+                  Profesionales a cargo
+                </a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"> Legales </a>
+              </li>
+              <li>
+                <a href="404.html" class="text-muted color-hover"
+                  >Administración
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- horarios -->
+          <div
+            class="col-12 col-md-3 d-flex flex-column justify-content-center text-muted space-bottom__modifed"
+          >
+            <h6 class="text-center-responsive">Horarios de atencion:</h6>
+
+            <p class="text-center-responsive">
+              Martes a Domingos: 11hs-15hs, 20:00hs-00:00hs
+            </p>
+            <p class="text-center-responsive">Feriados: 20:00hs-00:00hs</p>
+          </div>
+          <!-- redes -->
+          <div
+            class="col-12 col-md-2 d-flex flex-column align-items-center justify-content-center text-muted"
+          >
+            <h6 class="text-center">redes sociales</h6>
+            <a href="404.html"
+              ><i
+                class="fab fa-facebook-square fa-2x text-muted color-hover"
+              ></i
+            ></a>
+            <a href="404.html"
+              ><i class="fab fa-twitter-square fa-2x text-muted color-hover"></i
+            ></a>
+            <a href="404.html"
+              ><i
+                class="fab fa-instagram-square fa-2x text-muted color-hover"
+              ></i
+            ></a>
+          </div>
+        </article>
+      </section>
+    </footer>
+
+    <!-- jQuery -->
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- smoth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        new WOW().init();
+      });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 80,
+        speed: 1000,
+      });
+    </script>
+  </body>
+</html>

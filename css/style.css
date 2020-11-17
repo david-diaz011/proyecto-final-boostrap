@@ -1,3 +1,9 @@
+/* navbar logo */
+
+.small-logo {
+  width: 80px;
+}
+
 /* carrousel */
 
 .banner {
@@ -91,7 +97,10 @@
   color: white !important;
   border: none !important;
 }
-
+/* estilos para footer */
+.color-hover:hover {
+  color: #edbb00 !important;
+}
 /* estilos para pagina de error */
 .banner-404 {
   background-image: url(../img/fondo-404.jpg);
@@ -136,10 +145,155 @@
 .heading__contact {
   font-size: 5rem;
 }
+/*  estilos para pagina de entrada-1 */
+.banner__entrada-fondo {
+  background-image: url(../img/fondo-entrada-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.705);
+  background-blend-mode: soft-light;
+  color: white;
+}
+
+.row_ancho {
+  height: 93%;
+}
+.color_entrada-1 {
+  background-color: #eea86a;
+}
+/* estilos para entrada 2 */
+.entrada-2 {
+  background-image: url(../img/fondo-para-entradas.jpg);
+  background-color: rgba(0, 0, 0, 0.438);
+}
+/* estilo para entrada 3 */
+.entrada-3 {
+  background-image: url(../img/alimentacion-saludable.jpg);
+  background-color: rgba(0, 0, 0, 0.438);
+}
+.entrada-4 {
+  background-image: url(../img/banner-entrada-4.jpg);
+  background-color: rgba(0, 0, 0, 0.438);
+  height: 90vh;
+}
+/* comentario para paginas  */
+.comentarios {
+  margin: 20px 0;
+}
+
+.form_comentarios textarea {
+  width: 100%;
+  height: 84px;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 84px;
+  max-height: 300px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  border: 1px solid #4b65d1;
+  margin-bottom: 20px;
+}
+
+.form_comentarios .btn {
+  background: #4b65d1;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.form_comentarios .btn:hover {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.35);
+}
+
+.media {
+  border-top: 1px solid #bfbfbf;
+  padding-top: 20px;
+}
+
+.media img {
+  margin-right: 20px;
+}
+
+.media .nombre {
+  color: #4b65d1;
+  margin-bottom: 0;
+}
+
+.media .nombre span {
+  font-size: 12px;
+  color: #464646;
+  margin-left: 10px;
+}
+
+.media .comentario {
+  margin-top: 10px;
+}
+
+.media .botones {
+  margin-bottom: 10px;
+}
+
+.media .botones a {
+  color: #acacac;
+  font-size: 14px;
+  margin-left: 20px;
+}
+/* ESTILOS PARA LOGIN */
+.baner_fondo-login {
+  background-image: url(../img/fondo-blog.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: "Xanh Mono", sans-serif;
+}
+.bg_form {
+  background-color: #1e2126;
+}
+.border_mod {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+.btn_modifc-login {
+  border: 1px solid white;
+  color: white;
+}
+.btn_modifc-login:hover {
+  background-color: #edbb00;
+  color: white;
+  border-color: #edbb00;
+}
+.btn_login {
+  border: 1px solid white;
+  color: white;
+}
+.btn_facebook:hover {
+  background-color: #307dec;
+  border: none;
+  color: white;
+}
+.btn_modifc-google:hover {
+  background-color: #ef6506;
+  border: none;
+  color: white;
+}
+.form__font-2 {
+  font-family: "Poppins", sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   /* media para carrusel */
   .carousel-caption {
     padding-bottom: 310px;
+  }
+  /* ESTILOS PARA LOGIN */
+  .baner_fondo-login {
+    background-color: rgba(0, 0, 0, 0.705);
+    background-blend-mode: soft-light;
   }
 }
 
@@ -177,5 +331,31 @@
   }
   .heading__contact {
     font-size: 3rem;
+  }
+  /* estilos para footer */
+
+  .text-center-responsive {
+    text-align: center;
+  }
+  .space-bottom__modifed {
+    margin-bottom: 2rem;
+  }
+  .jus {
+    justify-items: center;
+  }
+  /* estilos de pagina de entrada-1 */
+  .row_ancho {
+    height: 80%;
+  }
+  .responsive_headding {
+    font-size: 2rem;
+  }
+  /* estilos para login */
+  .baner_fondo-login {
+    background-color: rgba(0, 0, 0, 0.705);
+    background-blend-mode: soft-light;
+  }
+  .border_mod {
+    border: none !important;
   }
 }
