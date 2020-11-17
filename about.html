@@ -7,7 +7,19 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Restoclic</title>
+    <!-- keywords -->
+    <meta name="keywords" content="Restaurant, Resto, Restoclick, Comidas" />
+    <!-- description -->
+    <meta
+      name="description"
+      content="un restaurante hecho por devs para devs, disfruta de esta exquisita experiencia digital"
+    />
+    <!-- autor -->
+    <meta
+      name="autor"
+      content="Nexus Developers/Molina Maria Pia, Sumerinde Carlos Alberto, Carrión Isaías,Diaz David "
+    />
+    <title>Restoclick</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Material Design Bootstrap -->
@@ -15,17 +27,9 @@
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- fuentes de google -->
-    <!-- fuente de google merienda -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fuente de google amatic -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap"
       rel="stylesheet"
     />
     <!-- iconos -->
@@ -38,10 +42,13 @@
     <header>
       <!-- navegacion -->
       <nav
-        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top"
+        class="navbar navbar-expand-lg navbar-dark shadow-none scrolling-navbar fixed-top animated bounceInLeft"
       >
         <div class="container">
-          <a class="navbar-brand" href="#">Restoclick</a>
+          <div>
+            <img src="./img/logo-oficial.png" alt="" class="small-logo" />
+            <a class="navbar-brand" href="index.html">Restoclick</a>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -56,7 +63,7 @@
           <div class="collapse navbar-collapse" id="navbarMenu">
             <div class="navbar-nav ml-auto">
               <a class="nav-link" href="index.html">inicio</a>
-              <a class="nav-link" href="about.html">¿quienes somos?</a>
+              <a class="nav-link active" href="#">¿quienes somos?</a>
               <a class="nav-link" href="#">productos</a>
               <a class="nav-link" href="contacto.html">contacto</a>
               <a class="nav-link" href="login.html">inicar sesion</a>
@@ -131,10 +138,11 @@
                           >¿Quieres recibir nuestras novedades?</label
                         >
                       </div>
-                      <button type="submit" class="btn btn-success btn-block">
+                      <button class="btn btn-success btn-block">
                         <a
-                          href=""
+                          href="404.html"
                           class="btn-link text-white text-decoration-none"
+                          type="submit"
                           >enviar</a
                         >
                       </button>
@@ -146,36 +154,126 @@
           </div>
         </article>
       </section>
+      <!-- carrusel -->
     </header>
+    <!-- banner de entrada -->
     <main>
-      <section>
-        <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <!-- item 1 de carrusel -->
-            <div class="carousel-item active">
-              <div class="banner-404"></div>
-              <div class="carousel-caption caption-error d-flex flex-column">
-                <h1 class="display-3 error-fonts animated bounceInDown slow">
-                  ¡oops!
-                </h1>
-                <h2 class="display-3 error-fonts animated bounceInDown slow">
-                  ERROR 404
-                </h2>
-                <p class="mt-5 error-content animated zoomInUp slow">
-                  Te pedimos disculpas, pero la página web que buscas ya no se
-                  encuentra disponible en nuestra Carta de recomendaciones o
-                  puede que se hayan comido nuestro ultimo plato
-                  <a href="index.html" class="link__error">pincha aqui </a>
-                  y encarga otra página pronto!! no queremos que nadie se quede
-                  sin comer
+      <section class="banner__entrada-fondo entrada-3 container-fluid">
+        <article
+          class="row justify-content-center align-content-center row_ancho"
+        >
+          <div
+            class="col-12 d-flex flex-column justify-content-center text-center"
+          >
+            <h1 class="responsive_headding titulo-fuente animated fadeInLeft">
+              SOBRE NOSOTROS
+            </h1>
+          </div>
+        </article>
+        <!-- agregado solo para entradas de comida -->
+      </section>
+      <!-- contenido de entrada -->
+
+      <div class="team-boxed">
+        <div class="container">
+          <div class="intro">
+            <h2 class="text-center">El Equipo</h2>
+            <p class="text-center">
+              Somos estudiantes apasionados por el mundo del desarrollo y el
+              crecimiento de la industria IT, nos motiva saber que seremos
+              nosotros el futuro de la tecnología y que rollingcode es nuestro
+              camino para llegar a buen puerto
+            </p>
+          </div>
+          <div class="row people">
+            <div class="col-md-6 col-lg-3 item">
+              <div class="box">
+                <img
+                  class="rounded-circle"
+                  src="./img/david.jpg"
+                  alt="colaborador de rolling"
+                />
+                <h3 class="name">david</h3>
+                <p class="title">Front-end developer</p>
+                <p class="description">
+                  Soy Estudiante de rollingcode, estoy apasionado por el
+                  desarrollo de las tecnologías y aspiro a algún día poder
+                  dedicarme a ellos
                 </p>
+                <div class="social">
+                  <a href="404.html"><i class="fa fa-facebook-official"></i></a
+                  ><a href="404.html"><i class="fa fa-twitter"></i></a
+                  ><a href="404.html"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 item">
+              <div class="box">
+                <img
+                  class="rounded-circle"
+                  src="./img/pia.jpg"
+                  alt="colaborador de rolling"
+                />
+                <h3 class="name">María Pía</h3>
+                <p class="title">ux designer</p>
+                <p class="description">
+                  Una estudiante de rollingcode que busca entregarle a las
+                  personas la mejor calidad y experiencia en el diseño, que los
+                  atrape y que quieran quedarse en el sitio
+                </p>
+                <div class="social">
+                  <a href="404.html"><i class="fa fa-facebook-official"></i></a
+                  ><a href="404.html"><i class="fa fa-twitter"></i></a
+                  ><a href="404.html"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 item">
+              <div class="box">
+                <img class="rounded-circle" src="./img/isaias.jpg" />
+                <h3 class="name">Isaias Carrion</h3>
+                <p class="title">ux writer</p>
+                <p class="description">
+                  Estudiar en Rolling me enseño que lo mas importante es el modo
+                  en el que transmitimos la información hacia nuestros clientes,
+                  por eso, sin palabras complejas y con lo justo pretendo
+                  atraparte en nuestro sitio para que estés informado como es
+                  debido
+                </p>
+                <div class="social">
+                  <a href="404.html"><i class="fa fa-facebook-official"></i></a
+                  ><a href="404.html"><i class="fa fa-twitter"></i></a
+                  ><a href="404.html"><i class="fa fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 item">
+              <div class="box">
+                <img class="rounded-circle" src="./img/carlos.jpg" />
+                <h3 class="name">Carlos Sumerinde</h3>
+                <p class="title">Back-end Developer</p>
+                <p class="description">
+                  mi paso por rolling hizo que comprendiera la importancia del
+                  back, es la esencia de toda aplicación, su funcionabilidad y
+                  su seguridad depende de ello. Por eso me enfoco en desarrollar
+                  aplicaciones robustas que sean capaces de gestionar lo que el
+                  cliente necesita
+                </p>
+                <div class="social">
+                  <a href="404.html"><i class="fa fa-facebook-official"></i></a
+                  ><a href="404.html"><i class="fa fa-twitter"></i></a
+                  ><a href="404.html"><i class="fa fa-instagram"></i></a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      >
     </main>
-    <footer class="bg-dark">
+
+    <!-- footer -->
+    <footer class="bg-dark mt-5">
       <section class="container">
         <article class="row justify-content-between">
           <!-- primera columna con logo y texto -->
@@ -295,9 +393,14 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- smoth scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
       $(document).ready(function () {
         new WOW().init();
+      });
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        offset: 80,
+        speed: 1000,
       });
     </script>
   </body>
