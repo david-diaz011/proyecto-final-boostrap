@@ -5,7 +5,9 @@
 }
 
 /* carrousel */
-
+.centrado-horizontal-resp {
+  justify-content: center;
+}
 .banner {
   background-size: cover;
   background-position: center center;
